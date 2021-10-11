@@ -1,0 +1,68 @@
+<header>
+  <html>
+    <head>
+      <!--Get our CSS stylesheet-->
+      <link rel="stylesheet" href = "style.css">
+    </head>
+
+    <body class="main">
+
+        <!-- Enter name -->
+        <!--This div shows automatically when the user first visits the site, to ask for their name-->
+        <div id="name" class="name">
+          <p>Welcome! Enter your name below to get started</p>
+          <input id="name_field" placeholder="Your name" type="text">
+          <br>
+          <br>
+          <button id="name_submit" onclick="submit_name()">Submit</button>
+        </div>
+
+        <!-- Workout display -->
+        <!--This div replaces whichever one is showing at the time to give the user their workout for the day. It is empty, and will be populated with whatever text the get request returns-->
+        <div id="workout" class="workout"></div>
+
+        <!-- Survey -->
+        <!--This div shows if the user enters a name that hasn't been entered before, to get their schedule and which muscle groups they want to work-->
+        <div id="survey" class="survey">
+          <p>Since this is your first time, please answer the following questions to get started.</p>
+          <br>
+          <p>Which muscle groups are you looking to work on?</p>
+
+          <!-- Checkboxes for muscle groups -->
+          <input type="checkbox" id="survey_mg_0" name="Arms" value="Arms">
+          <label for="survey_mg_0">Arms</label><br>
+          <input type="checkbox" id="survey_mg_1" name="Legs" value="Legs">
+          <label for="survey_mg_1">Legs</label><br>
+          <input type="checkbox" id="survey_mg_2" name="Core" value="Core">
+          <label for="survey_mg_2">Core</label><br>
+
+          <!--Checkboxes for days of the week-->
+          <p>Which days of the week do you want to work out?</p>
+          <input type="checkbox" id="survey_wd_0" name="Sunday" value="Sunday">
+          <label for="survey_wd_0">Sunday</label><br>
+          <input type="checkbox" id="survey_wd_1" name="Monday" value="Monday">
+          <label for="survey_wd_1">Monday</label><br>
+          <input type="checkbox" id="survey_wd_2" name="Tuesday" value="Tuesday">
+          <label for="survey_wd_2">Tuesday</label><br>
+          <input type="checkbox" id="survey_wd_3" name="Wednesday" value="Wednesday">
+          <label for="survey_wd_3">Wednesday</label><br>
+          <input type="checkbox" id="survey_wd_4" name="Thursday" value="Thursday">
+          <label for="survey_wd_4">Thursday</label><br>
+          <input type="checkbox" id="survey_wd_5" name="Friday" value="Friday">
+          <label for="survey_wd_5">Friday</label><br>
+          <input type="checkbox" id="survey_wd_6" name="Saturday" value="Saturday">
+          <label for="survey_wd_6">Saturday</label><br>
+          <button id="survey_submit" onclick="submit_survey()">Submit</button>
+
+
+        </div>
+
+    </body>
+
+    <!--Import scripts-->
+    <script src='name.js'></script>
+    <script src='survey.js'></script>
+    <script src='workout.js'></script>
+
+  </html>
+</header>

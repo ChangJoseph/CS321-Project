@@ -1,0 +1,66 @@
+/*This sheet makes the HTML look a little fancier*/
+
+/*Style settings for name UI*/
+.name {
+  /*Name starts out visible, all others start out hidden*/
+  visibility: visible;
+  background-color: #f2f2f2;
+
+  color: #2f2f2f;
+
+  /*position:absolute means that all the different UIs will be layered over each other instead of placed next to each other*/
+  position:absolute;
+  align-self:center;
+
+  width: 50%;
+  height: 100%;
+
+  padding: 5px;
+}
+
+/*Style settings for workout UI*/
+.workout {
+  visibility: hidden;
+
+  background-color: #f2f2f2;
+  color: #2f2f2f;
+
+
+  position:absolute;
+  align-self:center;
+
+  width: 50%;
+  height: 100%;
+
+  padding: 5px;
+}
+
+/*Style settings for survey UI*/
+.survey {
+  visibility: hidden;
+
+  background-color: #f2f2f2;
+  color: #2f2f2f;
+
+
+  position:absolute;
+  align-self:center;
+  
+  width: 50%;
+  height: 100%;
+
+  padding: 5px;
+}
+
+/*Style settings for main (entire page)*/
+.main {
+  height: 100%;
+  width: 100%;
+
+  /*Make sure there are no white borders*/
+  margin: 0px;
+
+  /*Make the font look nice*/
+  /*We have to list a bunch in case the user's browser doesn't support them*/
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
